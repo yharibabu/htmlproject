@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal - Add Counsellor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+        }
+        /* Sidebar */
+        .sidebar {
+            width: 250px;
+            background-color: #1b2a48;
+            color: white;
+            height: 100vh;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .sidebar ul {
+            list-style-type: none;
+        }
+        .sidebar ul li {
+            margin: 20px 0;
+        }
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .sidebar ul li a:hover {
+            text-decoration: underline;
+        }
+        .sidebar .signout {
+            margin-top: auto;
+        }
+        /* Main content */
+        .content {
+            flex-grow: 1;
+            padding: 40px;
+            background-color: #f4f4f9;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 {
+            font-size: 28px;
+            color: #333;
+        }
+        .header .about {
+            font-size: 20px;
+            color: #333;
+        }
+        .header .about i {
+            font-size: 24px;
+            vertical-align: middle;
+        }
+        h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        /* Form */
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        /* Button */
+        .btn-add {
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .btn-add:hover {
+            background-color: #45a049;
+        }
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 200px;
+            }
+            .btn-add {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar Menu -->
+    <div class="sidebar">
+        <ul>
+            <li><a href="adminindex.html">VICTIM DETAILS</a></li>
+            <li><a href="addcounsellor.html">ADD COUNSELLOR</a></li>
+            <li><a href="addlegaladvisor.html">ADD LEGAL ADVISOR</a></li>
+            <li><a href="addlegal.html">UPDATE LEGAL RIGHTS</a></li>
+            <li><a href="victimcases.html">VICTIM CASES</a></li>
+        </ul>
+        <div class="signout">
+            <a href="index.html" style="color: white;">Sign out</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <div class="header">
+            <h1>ADMIN PORTAL</h1>
+            <div class="about">
+                <a href="about.html">ABOUT</a>
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+            </div>
+        </div>
+
+        <h2>ADD LEGAL ADVISOR</h2>
+
+        <!-- Counsellor Form -->
+        <div class="form-group">
+            <input type="text" placeholder="Username">
+        </div>
+        <div class="form-group">
+            <input type="password" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="Phone no">
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="Experience">
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="Address">
+        </div>
+
+        <button class="btn-add">ADD</button>
+    </div>
+</body>
+</html>

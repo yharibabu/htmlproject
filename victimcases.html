@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .header .profile-icon {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+        .header .profile-icon img {
+            width: 30px;
+        }
+        .sidebar {
+            width: 200px;
+            height: 100vh;
+            background-color: #002c60;
+            color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 20px;
+            text-align: left;
+        }
+        .sidebar h3 {
+            font-size: 24px;
+            margin-top: 0;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin: 20px 0;
+            font-size: 18px;
+        }
+        .sidebar ul li:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .sidebar button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+        .main-content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+        h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #e0e0e0;
+        }
+        table, th, td {
+            border: 1px solid #bbb;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        .assign-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .assign-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>ADMIN PORTAL</h1>
+        <span class="profile-icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Circle-icons-profile.svg" alt="Profile">
+        </span>
+    </div>
+
+    <div class="sidebar">
+        <h3>MENU</h3>
+        <ul>
+            <li><a href="adminindex.html" style="color: white;">VICTIM DETAILS</a></li>
+            <li><a href="addcounsellor.html"style="color: white;">ADD COUNSELLOR</a></li>
+            <li><a href="addlegaladvisor.html"style="color: white;">ADD LEGAL ADVISOR</a></li>
+            <li><a href="addlegal.html"style="color: white;">UPDATE LEGAL RIGHTS</a></li>
+            <li><a href="victimcases.html"style="color: white;">VICTIM CASES</a></li>
+        </ul>
+          <div class="signout">
+            <a href="index.html" style="color: white;">Sign out</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h2>ASSIGN VICTIM CASES TO COUNSELLOR :</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Case Details</th>
+                    <th>Assign To</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Neha</td>
+                    <td>Sexual Assault</td>
+                    <td><button class="assign-btn">Assign</button></td>
+                </tr>
+                <tr>
+                    <td>Ananya</td>
+                    <td>Assaults</td>
+                    <td><button class="assign-btn">Assign</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

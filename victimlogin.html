@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victim Portal Login</title>
+    <style>
+               /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #222;
+        }
+
+        /* Container Styles */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+        }
+
+        /* Login Box Styles */
+        .login-box {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+
+        /* Heading Styles */
+        .login-box h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* Paragraph Styles */
+        .login-box p {
+            font-size: 14px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Form Styles */
+        .login-box form {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        /* Input Styles */
+        .login-box input[type="text"], .login-box input[type="password"] {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        /* Button Styles */
+        .login-box button[type="submit"] {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login-box button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        /* Continue Styles */
+        .continue {
+            margin-bottom: 20px;
+        }
+
+        /* Google Button Styles */
+        .google-btn {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .google-btn img {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Anchor Styles */
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Top Right Styles */
+        .top-right {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .top-right a {
+            margin-left: 10px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .top-right a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h1>VICTIM PORTAL</h1>
+            <p>Choose one of the options to proceed</p>
+            <form action="victimindex.html" method="post">
+                <input type="text" placeholder="username" required>
+                <input type="password" placeholder="Password" required>
+                <a href="victimindex.jsp">
+                <button type="submit">Log in</button>
+                </a>
+            </form>
+            <div class="continue">
+                <p>Or continue with</p>
+                <button class="google-btn">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google logo">
+                </button>
+            </div>
+            <p>Don’t have an account? <a href="signup.html">Sign up</a></p>
+        </div>
+    </div>
+</body>
+</html>

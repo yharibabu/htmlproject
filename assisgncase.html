@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counsellor Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .menu {
+            width: 20%;
+            background-color: #1c3c66;
+            color: white;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        .menu h2 {
+            color: white;
+        }
+
+        .menu a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin: 20px 0;
+        }
+
+        .menu a:hover {
+            text-decoration: underline;
+        }
+
+        .menu a:last-child {
+            margin-top: auto;
+        }
+
+        .content {
+            width: 80%;
+            padding: 40px;
+            background-color: #fff;
+        }
+
+        .content h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            background-color: #eaeaea;
+        }
+
+        th {
+            background-color: #ddd;
+            font-weight: bold;
+        }
+
+        .btn-assign {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .btn-assign:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <h2>MENU</h2>
+            <li><a href="counsellorindex.html"style="color: white;">Assigned Victim Details</a></li>
+            <li><a href="sessiondetails.html"style="color: white;">Session Details of Victim</a></li>
+            <li><a href="assisgncase.html"style="color: white;">Assign case to Legal Advisor</a></li>
+            <li><a href="condtions.html"style="color: white;">Mental/Physical Condition of Victims</a></li>
+            
+            <li><a href="message.html"style="color: white;">Message with Victims</a></li>
+            <li><a href="index.html"style="color: white;">Sign out</a></li>
+        </div>
+        <div class="content">
+            <h1>Assign case to legal Advisor :</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Case Details</th>
+                        <th>Assign To</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Neha</td>
+                        <td>Sexual assault</td>
+                        <td><button class="btn-assign">Assign</button></td>
+                    </tr>
+                    <tr>
+                        <td>Ananya</td>
+                        <td>Assaults</td>
+                        <td><button class="btn-assign">Assign</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

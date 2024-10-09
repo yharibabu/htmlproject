@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal - Victim Details</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+        }
+        /* Sidebar */
+        .sidebar {
+            width: 250px;
+            background-color: #1b2a48;
+            color: white;
+            height: 100vh;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .sidebar ul {
+            list-style-type: none;
+        }
+        .sidebar ul li {
+            margin: 20px 0;
+        }
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .sidebar ul li a:hover {
+            text-decoration: underline;
+        }
+        .sidebar .signout {
+            margin-top: auto;
+        }
+        /* Main content */
+        .content {
+            flex-grow: 1;
+            padding: 40px;
+            background-color: #f4f4f9;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 {
+            font-size: 28px;
+            color: #333;
+        }
+        .header .about {
+            font-size: 20px;
+            color: #333;
+        }
+        .header .about i {
+            font-size: 24px;
+            vertical-align: middle;
+        }
+        /* Table */
+        .victim-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: white;
+        }
+        .victim-table th, .victim-table td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        .victim-table th {
+            background-color: #f0f0f0;
+        }
+        .victim-table tr:hover {
+            background-color: #f9f9f9;
+        }
+        /* Buttons */
+        .btn {
+            padding: 8px 12px;
+            font-size: 14px;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .btn-update {
+            background-color: #f4511e;
+            color: white;
+            border: none;
+        }
+        .btn-delete {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+        }
+        .btn-update:hover {
+            background-color: #e64a19;
+        }
+        .btn-delete:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar Menu -->
+    <div class="sidebar">
+        <ul>
+            <li><a href="adminindex.html">VICTIM DETAILS</a></li>
+            <li><a href="addcounsellor.html">ADD COUNSELLOR</a></li>
+            <li><a href="addlegaladvisor.html">ADD LEGAL ADVISOR</a></li>
+            <li><a href="addlegal.html">UPDATE LEGAL RIGHTS</a></li>
+            <li><a href="victimcases.html">VICTIM CASES</a></li>
+        </ul>
+        <div class="signout">
+            <a href="index.html" style="color: white;">Sign out</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <div class="header">
+            <h1>ADMIN PORTAL</h1>
+            <div class="about">
+                <a href="about.html" style="Black: rgba(34, 4, 4, 0.23);">ABOUT</a>
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+            </div>
+        </div>
+
+        <h2>VICTIM DETAILS</h2>
+
+        <!-- Victim Table -->
+        <table class="victim-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Phone no</th>
+                    <th>Gender</th>
+                    <th>DOB</th>
+                    <th>Address</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sagar</td>
+                    <td>9687485789</td>
+                    <td>Male</td>
+                    <td>26-11-2003</td>
+                    <td>Vijayawada</td>
+                    <td><button class="btn btn-update">UPDATE</button></td>
+                    <td><button class="btn btn-delete">DELETE</button></td>
+                </tr>
+                <tr>
+                    <td>Sarath</td>
+                    <td>7845874698</td>
+                    <td>Male</td>
+                    <td>02-05-2004</td>
+                    <td>Vijayawada</td>
+                    <td><button class="btn btn-update">UPDATE</button></td>
+                    <td><button class="btn btn-delete">DELETE</button></td>
+                </tr>
+                <tr>
+                    <td>Karthikeya</td>
+                    <td>8587425987</td>
+                    <td>Male</td>
+                    <td>15-06-2004</td>
+                    <td>Vijayawada</td>
+                    <td><button class="btn btn-update">UPDATE</button></td>
+                    <td><button class="btn btn-delete">DELETE</button></td>
+                </tr>
+                <tr>
+                    <td>Ameen</td>
+                    <td>7654789487</td>
+                    <td>Male</td>
+                    <td>24-07-2004</td>
+                    <td>Vijayawada</td>
+                    <td><button class="btn btn-update">UPDATE</button></td>
+                    <td><button class="btn btn-delete">DELETE</button></td>
+                </tr>
+                <tr>
+                    <td>Sanjay</td>
+                    <td>9665884789</td>
+                    <td>Male</td>
+                    <td>27-09-2004</td>
+                    <td>Vijayawada</td>
+                    <td><button class="btn btn-update">UPDATE</button></td>
+                    <td><button class="btn btn-delete">DELETE</button></td>
+                </tr>
+                <tr>
+                    <td>Vijay</td>
+                    <td>9354784578</td>
+                    <td>Male</td>
+                    <td>06-05-2004</td>
+                    <td>Vijayawada</td>
+                    <td><button class="btn btn-update">UPDATE</button></td>
+                    <td><button class="btn btn-delete">DELETE</button></td>
+                </tr>
+                <tr>
+                    <td>Srikar</td>
+                    <td>9587463215</td>
+                    <td>Male</td>
+                    <td>16-11-2004</td>
+                    <td>Vijayawada</td>
+                    <td><button class="btn btn-update">UPDATE</button></td>
+                    <td><button class="btn btn-delete">DELETE</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
